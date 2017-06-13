@@ -3,7 +3,8 @@
 
 <!-- if only a single testsuite element is present, the testsuites
      element can be omitted. All attributes are optional. -->
-<testsuites disabled="" 
+<testsuites name="TestSuite MAXD1G"
+			disabled="" 
             errors="1"  
             failures="2"
             name="U-Boot"
@@ -83,7 +84,7 @@
 	      >
 
      
-      <error message="Mini USB" 
+      <error message="Mini USB error" 
 	     type="Mini USB type error"   
 	     ></error>
 
