@@ -1,0 +1,24 @@
+﻿Pruefprotokoll MäXle SN: MAXD1N3A00247	16/08/2016     10:39:06
+Konfiguration: MAXD1G
+              Index: Linux , U-Boot:0.97 , MAC: 00:12:91:4D:00:F7
+
+Funktionstest programmgesteuert: 
+--------------------------------------------------------------------------
+Test  1: RS232 UART3					- Ok
+Test  2: RS232 UART4					- Ok
+Test  3: I2C Bus 2					- Ok
+Test  4: I2C Bus 3					- Ok
+Test  5: Mini USB					- Ok
+Test  6: USB 1						- Ok
+Test  7: USB 2						- Ok
+Test  8: USB 3						- Ok
+Test  9: CAN						- not tested
+Test 10: Ethernet					- Ok
+Test 11: Mini SD-Card					- Ok
+Test 12: SD-Card					- Ok
+Test 13: Audio						- Ok
+Test 14: Memory						- Ok
+--------------------------------------------------------------------------
+Sichtpruefung ......................................[X]
+
+                                                   Geprueft: Frank Bintakies
