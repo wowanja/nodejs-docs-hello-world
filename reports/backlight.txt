@@ -1,0 +1,295 @@
+
+Usage: tux -o -d BacklightSecTest
+
+ShellProc(SPM_SHELL_INFO, ...) called
+Add Security Registry
+ShellProc(SPM_REGISTER, ...) called
+<TESTGROUP>
+
+*** ==================================================================
+*** SUITE INFORMATION
+***
+*** Suite Name:        N/A (built on the fly)
+*** Suite Description: N/A
+*** Number of Tests:   6
+*** ==================================================================
+
+*** ==================================================================
+*** SYSTEM INFORMATION
+***
+*** Date and Time:          01/01/2006 12:10 PM (Sunday)
+***
+*** Device Name:            MX696
+***
+*** OS Version:             8.00
+*** Build Number:           6217
+*** Platform ID:            3 "Windows CE"
+*** Version String:         ""
+***
+*** Processor Type:         0x0000AAFF (43,775) "ARM Cortex"
+*** Processor Architecture: 0x0005     (5) "ARM"
+*** Page Size:              0x00001000 (4,096)
+*** Minimum App Address:    0x00010000 (65,536)
+*** Maximum App Address:    0x7FFFFFFF (2,147,483,647)
+*** Active Processor Mask:  0x00000001
+*** Number Of Processors:   2
+*** Allocation Granularity: 0x00010000 (65,536)
+*** Processor Level:        0x0007     (7)
+*** Processor Revision:     0x000A     (10)
+*** ==================================================================
+
+*** ==================================================================
+*** MEMORY INFO
+***
+*** Memory Total:   854,118,400 bytes
+*** Memory Used:    215,781,376 bytes
+*** Memory Free:    638,337,024 bytes
+***
+*** Kernel Used:        708,608 bytes
+*** Water Mark:         155,803 pages
+***
+*** Store Total:    121,987,072 bytes
+*** Store Used:         761,856 bytes
+*** Store Free:     121,225,216 bytes
+*** ==================================================================
+
+ShellProc(SPM_START_SCRIPT, ...) called
+ShellProc(SPM_BEGIN_GROUP, ...) called
+BEGIN GROUP: BACKLIGHTAPITEST.DLL
+   <TESTCASE ID=1001>
+   *** vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+   *** TEST STARTING
+   ***
+   *** Test Name:      Get Backlight Brightness
+   *** Test ID:        1001
+   *** Library Path:   \windows\backlightapitest.dll
+   *** Command Line:
+   *** Kernel Mode:    No
+   *** Random Seed:    10128
+   *** Thread Count:   0
+   *** vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+   ShellProc(SPM_BEGIN_TEST, ...) called
+   BEGIN TEST: "Get Backlight Brightness", Threads=0, Seed=10128
+      0007AE3D-413C-4e7e-8786-E2A696E73A6E device not found!
+      ERROR! Cannot get backlight driver.
+      ShellProc(SPM_END_TEST, ...) called
+   END TEST: "Get Backlight Brightness", FAILED, Time=0.014
+   *** ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   *** TEST COMPLETED
+   ***
+   *** Test Name:      Get Backlight Brightness
+   *** Test ID:        1001
+   *** Library Path:   \windows\backlightapitest.dll
+   *** Command Line:
+   *** Kernel Mode:    No
+   *** Result:         Failed
+   *** Random Seed:    10128
+   *** Thread Count:   1
+   *** Execution Time: 0:00:00.014
+   *** ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   
+   </TESTCASE RESULT="FAILED">
+   <TESTCASE ID=1002>
+   *** vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+   *** TEST STARTING
+   ***
+   *** Test Name:      Get Backlight Brightness Capabilities
+   *** Test ID:        1002
+   *** Library Path:   \windows\backlightapitest.dll
+   *** Command Line:
+   *** Kernel Mode:    No
+   *** Random Seed:    344
+   *** Thread Count:   0
+   *** vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+   ShellProc(SPM_BEGIN_TEST, ...) called
+   BEGIN TEST: "Get Backlight Brightness Capabilities", Threads=0, Seed=344
+      0007AE3D-413C-4e7e-8786-E2A696E73A6E device not found!
+      ERROR! Cannot get backlight driver.
+      ShellProc(SPM_END_TEST, ...) called
+   END TEST: "Get Backlight Brightness Capabilities", FAILED, Time=0.014
+   *** ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   *** TEST COMPLETED
+   ***
+   *** Test Name:      Get Backlight Brightness Capabilities
+   *** Test ID:        1002
+   *** Library Path:   \windows\backlightapitest.dll
+   *** Command Line:
+   *** Kernel Mode:    No
+   *** Result:         Failed
+   *** Random Seed:    344
+   *** Thread Count:   1
+   *** Execution Time: 0:00:00.014
+   *** ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   
+   </TESTCASE RESULT="FAILED">
+   <TESTCASE ID=1003>
+   *** vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+   *** TEST STARTING
+   ***
+   *** Test Name:      Get Backlight Settings
+   *** Test ID:        1003
+   *** Library Path:   \windows\backlightapitest.dll
+   *** Command Line:
+   *** Kernel Mode:    No
+   *** Random Seed:    1161
+   *** Thread Count:   0
+   *** vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+   ShellProc(SPM_BEGIN_TEST, ...) called
+   BEGIN TEST: "Get Backlight Settings", Threads=0, Seed=1161
+      0007AE3D-413C-4e7e-8786-E2A696E73A6E device not found!
+      ERROR! Cannot get backlight driver.
+      ShellProc(SPM_END_TEST, ...) called
+   END TEST: "Get Backlight Settings", FAILED, Time=0.014
+   *** ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   *** TEST COMPLETED
+   ***
+   *** Test Name:      Get Backlight Settings
+   *** Test ID:        1003
+   *** Library Path:   \windows\backlightapitest.dll
+   *** Command Line:
+   *** Kernel Mode:    No
+   *** Result:         Failed
+   *** Random Seed:    1161
+   *** Thread Count:   1
+   *** Execution Time: 0:00:00.014
+   *** ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   
+   </TESTCASE RESULT="FAILED">
+   <TESTCASE ID=1004>
+   *** vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+   *** TEST STARTING
+   ***
+   *** Test Name:      Set Backlight Settings
+   *** Test ID:        1004
+   *** Library Path:   \windows\backlightapitest.dll
+   *** Command Line:
+   *** Kernel Mode:    No
+   *** Random Seed:    3829
+   *** Thread Count:   0
+   *** vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+   ShellProc(SPM_BEGIN_TEST, ...) called
+   BEGIN TEST: "Set Backlight Settings", Threads=0, Seed=3829
+      0007AE3D-413C-4e7e-8786-E2A696E73A6E device not found!
+      ERROR! Cannot get backlight driver.
+      ShellProc(SPM_END_TEST, ...) called
+   END TEST: "Set Backlight Settings", FAILED, Time=0.013
+   *** ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   *** TEST COMPLETED
+   ***
+   *** Test Name:      Set Backlight Settings
+   *** Test ID:        1004
+   *** Library Path:   \windows\backlightapitest.dll
+   *** Command Line:
+   *** Kernel Mode:    No
+   *** Result:         Failed
+   *** Random Seed:    3829
+   *** Thread Count:   1
+   *** Execution Time: 0:00:00.013
+   *** ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   
+   </TESTCASE RESULT="FAILED">
+   <TESTCASE ID=1005>
+   *** vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+   *** TEST STARTING
+   ***
+   *** Test Name:      Force Backlight Update
+   *** Test ID:        1005
+   *** Library Path:   \windows\backlightapitest.dll
+   *** Command Line:
+   *** Kernel Mode:    No
+   *** Random Seed:    12542
+   *** Thread Count:   0
+   *** vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+   ShellProc(SPM_BEGIN_TEST, ...) called
+   BEGIN TEST: "Force Backlight Update", Threads=0, Seed=12542
+      0007AE3D-413C-4e7e-8786-E2A696E73A6E device not found!
+      ERROR! Cannot get backlight driver.
+      ShellProc(SPM_END_TEST, ...) called
+   END TEST: "Force Backlight Update", FAILED, Time=0.013
+   *** ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   *** TEST COMPLETED
+   ***
+   *** Test Name:      Force Backlight Update
+   *** Test ID:        1005
+   *** Library Path:   \windows\backlightapitest.dll
+   *** Command Line:
+   *** Kernel Mode:    No
+   *** Result:         Failed
+   *** Random Seed:    12542
+   *** Thread Count:   1
+   *** Execution Time: 0:00:00.013
+   *** ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   
+   </TESTCASE RESULT="FAILED">
+   <TESTCASE ID=1006>
+   *** vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+   *** TEST STARTING
+   ***
+   *** Test Name:      Power Manager Backlight Operations
+   *** Test ID:        1006
+   *** Library Path:   \windows\backlightapitest.dll
+   *** Command Line:
+   *** Kernel Mode:    No
+   *** Random Seed:    8227
+   *** Thread Count:   0
+   *** vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+   ShellProc(SPM_BEGIN_TEST, ...) called
+   BEGIN TEST: "Power Manager Backlight Operations", Threads=0, Seed=8227
+      ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
+      Please use the -c"-p" option to enable power manager tests.
+      ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
+      ShellProc(SPM_END_TEST, ...) called
+   END TEST: "Power Manager Backlight Operations", SKIPPED, Time=0.024
+   *** ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   *** TEST COMPLETED
+   ***
+   *** Test Name:      Power Manager Backlight Operations
+   *** Test ID:        1006
+   *** Library Path:   \windows\backlightapitest.dll
+   *** Command Line:
+   *** Kernel Mode:    No
+   *** Result:         Skipped
+   *** Random Seed:    8227
+   *** Thread Count:   1
+   *** Execution Time: 0:00:00.024
+   *** ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   
+   </TESTCASE RESULT="SKIPPED">
+   ShellProc(SPM_END_GROUP, ...) called
+END GROUP: BACKLIGHTAPITEST.DLL
+ShellProc(SPM_STOP_SCRIPT, ...) called
+*** ==================================================================
+*** MEMORY INFO
+***
+*** Memory Total:   854,118,400 bytes
+*** Memory Used:    215,789,568 bytes
+*** Memory Free:    638,328,832 bytes
+***
+*** Kernel Used:        708,608 bytes
+*** Water Mark:         155,803 pages
+***
+*** Store Total:    121,987,072 bytes
+*** Store Used:         761,856 bytes
+*** Store Free:     121,225,216 bytes
+*** ==================================================================
+
+*** ==================================================================
+*** SUITE SUMMARY
+***
+*** Passed:               0
+*** Failed:               5
+*** Skipped:              1
+*** Aborted:              0
+*** Informative:          0
+*** -------- ---------
+*** Total:                6
+***
+*** Cumulative Test Execution Time: 0:00:00.092
+*** Total Tux Suite Execution Time: 0:00:01.236
+*** CPU Idle Time:                  0:00:00.001
+*** ==================================================================
+</TESTGROUP>
+@@@@@@5
+
+ShellProc(SPM_UNLOAD_DLL, ...) called
+Remove Security Registry
