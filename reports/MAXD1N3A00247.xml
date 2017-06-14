@@ -17,8 +17,7 @@
                                
 	     tests="4"     
 	     disabled=""  
-		 errors="1"    
-						   
+		 errors="1"       
 		 failures="2"                 
 	     id="0"        
 	        
