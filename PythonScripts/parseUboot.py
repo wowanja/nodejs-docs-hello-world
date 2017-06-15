@@ -13,6 +13,9 @@ test_cases = [
     tc1, tc2, tc3   
 ]
 ts = TestSuite('MAXD1N3A00247', test_cases)
-
-with open('reports/MAXD1N3A00247.xml', 'w') as f:
-    TestSuite.to_file(f, [ts], prettyprint=True)
+try:
+	with open('reports/MAXD1N3A00247.xml', 'w') as f:
+		TestSuite.to_file(f, [ts], prettyprint=True)
+except Exception as ex:
+	print ex
+	
