@@ -1,6 +1,7 @@
 import os
 from junit_xml import TestSuite, TestCase
 
+print('In Python Script')
 tc1 = TestCase('Test  1', 'RS232 UART3')
 tc1.add_error_info('Test ERROR')
 
