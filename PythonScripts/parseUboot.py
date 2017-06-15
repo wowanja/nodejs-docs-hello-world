@@ -16,15 +16,17 @@ test_cases = [
 ]
 ts = TestSuite('MAXD1N3A00247', test_cases)
 
-filename = 'reports/MAXD1N3A00247.xml'
+filename = './reports/MAXD1N3A00247.xml'
 try:
     if not os.path.exists(os.path.dirname(filename)):
         try:
             os.makedirs(os.path.dirname(filename))
+            print(os.path.abspath(filename))
         except OSError as exc: # Guard against race condition
             if exc.errno != errno.EEXIST:
                 raise
-        with open(filename, 'w') as f:
-            TestSuite.to_file(f, [ts], prettyprint=True)
+    with open(filename, 'w') as f:
+        print('Create JUnit XML')
+        TestSuite.to_file(f, [ts], prettyprint=True)
 except Exception as ex:
 	print(ex)
