@@ -1,99 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- a description of the JUnit XML format and how Jenkins parses it. See also junit.xsd -->
-
-<!-- if only a single testsuite element is present, the testsuites
-     element can be omitted. All attributes are optional. -->
-<testsuites	disabled="" 
-            errors="1"  
-            failures="2"
-            name="U-Boot"
-            tests="1"
-            time="0.2"
-	    >
-
-  <!-- testsuite can appear multiple times, if contained in a testsuites element.
-       It can also be the root element. -->
-  <testsuite name="MAXD1N3A00247"    
-                               
-	     tests="4"     
-	     disabled=""  
-		 errors="1"   
-		 failures="2"                 
-	     id="0"        
-	        
-	        
-	     time="0.2"      
-	      
-	     >
-
-    <!-- Properties (e.g., environment settings) set during test
-	 execution. The properties element can appear 0 or once. -->
-    
-
-    <!-- testcase can appear multiple times, see /testsuites/testsuite@tests -->
-    <testcase name="RS232 UART3" 
-	       
-	      classname="Uboot"  
-	      status="FAILED"
-	             
-	      >
-
-      <!-- Indicates that the test failed. A failure is a test which
-	   the code has explicitly failed by using the mechanisms for
-	   that purpose. For example via an assertEquals. Contains as
-	   a text node relevant data for the failure, e.g., a stack
-	   trace. optional -->
-      <failure message="UART3 failed" 
-	       type="UART3 type"    
-	       ></failure>
-
-      
-    </testcase>
-
-	<testcase name="RS232 UART4" 
-	      
-	      classname="Uboot" 
-	      status="FAILED"
-	            
-	      >
-
-      
-      <failure message="UART4 failed"
-	       type="UART4 type" 
-	       ></failure>
-
-     </testcase>
-	
-	<testcase name="I2C Bus 2"      
-	       
-	      classname="Uboot"  
-	      status="PASSED"
-	             
-	      >
-    </testcase>
-	
-	<testcase name="Mini USB"      
-	       
-	      classname="Uboot"
-	      status="ERROR"
-	           
-	      >
-
-     
-      <error message="Mini USB error" 
-	     type="Mini USB type error"   
-	     ></error>
-
-      <!-- Data that was written to standard out while the test was executed. optional -->
-      <!-- <system-out></system-out> -->
-
-      <!-- Data that was written to standard error while the test was executed. optional -->
-      <!-- <system-err></system-err> -->
-    </testcase>
-	
-    <!-- Data that was written to standard out while the test suite was executed. optional -->
-    <!-- <system-out></system-out> -->
-    <!-- Data that was written to standard error while the test suite was executed. optional -->
-    <!-- <system-err></system-err> -->
-  </testsuite>
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="1" failures="1" tests="2" time="0.0">
+        <testsuite disabled="0" errors="1" failures="1" name="MAXD1N3A00247" skipped="0" tests="2" time="0">
+                <testcase classname="RS232 UART3" name="Test  1">
+                        <error message="Test ERROR" type="error"/>
+                </testcase>
+                <testcase classname="RS232 UART4" name="Test  2">
+                        <failure message="Test FAILED" type="failure"/>
+                </testcase>
+        </testsuite>
 </testsuites>
