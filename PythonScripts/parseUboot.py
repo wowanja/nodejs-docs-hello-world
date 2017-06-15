@@ -1,10 +1,10 @@
 from junit_xml import TestSuite, TestCase
 
 tc1 = TestCase('Test  1', 'RS232 UART3')
-tc1.add_error_info('Test ERROR', None, 'error')
+tc1.add_error_info('Test ERROR')
 
 tc2 = TestCase('Test  2', 'RS232 UART4')
-tc2.add_failure_info('Test FAILED', None, 'failure')
+tc2.add_failure_info('Test FAILED')
 
 tc3 = TestCase('Test  2', 'CAN')
 tc3.add_skipped_info('Test SKIPPED')
