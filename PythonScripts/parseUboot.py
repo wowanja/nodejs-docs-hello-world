@@ -1,3 +1,4 @@
+import os
 from junit_xml import TestSuite, TestCase
 
 tc1 = TestCase('Test  1', 'RS232 UART3')
@@ -13,9 +14,16 @@ test_cases = [
     tc1, tc2, tc3   
 ]
 ts = TestSuite('MAXD1N3A00247', test_cases)
+
+filename = 'reports/MAXD1N3A00247.xml'
 try:
-	with open('reports/MAXD1N3A00247.xml', 'w') as f:
-		TestSuite.to_file(f, [ts], prettyprint=True)
+    if not os.path.exists(os.path.dirname(filename)):
+        try:
+            os.makedirs(os.path.dirname(filename))
+        except OSError as exc: # Guard against race condition
+            if exc.errno != errno.EEXIST:
+                raise
+        with open(filename, 'w') as f:
+            TestSuite.to_file(f, [ts], prettyprint=True)
 except Exception as ex:
-	print ex
-	
+	print(ex)
