@@ -17,7 +17,7 @@ Test 10: Ethernet					- Ok
 Test 11: Mini SD-Card					- Ok
 Test 12: SD-Card					- Ok
 Test 13: Audio						- Ok
-Test 14: Memory						- Ok
+Test 14: Memory						- failed
 --------------------------------------------------------------------------
 Sichtpruefung ......................................[X]
 
