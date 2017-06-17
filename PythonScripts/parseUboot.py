@@ -59,7 +59,7 @@ def processTestResult(input_filename, output_filename):
             print(test_case_result)
             tc = TestCase(test_case_name, test_case_classname)
             if (test_case_result.strip(' \t\n\r').lower() == 'not tested'):
-                tc.add_skipped_info('Test SKIPPED')
+                tc.add_skipped_info('Test SKIPPED', 'skipped output')
             if (test_case_result.strip(' \t\n\r').lower() == 'failed'):
                 tc.add_failure_info('Test FAILED')
 
