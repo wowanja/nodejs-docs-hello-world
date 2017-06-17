@@ -57,7 +57,7 @@ def processTestResult(input_filename, output_filename):
 
             test_case_result = tmp_entries[1].strip(' \t\n\r')
             
-            tc = TestCase(name=test_case_name, classname=test_case_classname)
+            tc = TestCase(name=test_case_name, classname=test_suite_name + '.' + test_case_classname)
             if (test_case_result.strip(' \t\n\r').lower() == 'not tested'):
                 tc.add_skipped_info('Test SKIPPED', 'skipped output')
             if (test_case_result.strip(' \t\n\r').lower() == 'failed'):
@@ -65,7 +65,7 @@ def processTestResult(input_filename, output_filename):
 
             test_cases.append(tc)
 
-        test_suite = TestSuite(name=test_suite_name, test_cases=test_cases, package=test_suite_name, timestamp=timestamp, properties=test_suite_properties)
+        test_suite = TestSuite(name=test_suite_name, test_cases=test_cases, timestamp=timestamp, properties=test_suite_properties)
 
         save_testsuite_to_file(test_suite, output_filename)
         
