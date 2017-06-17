@@ -65,7 +65,7 @@ def processTestResult(input_filename, output_filename):
 
             test_cases.append(tc)
 
-        test_suite = TestSuite(test_suite_name, test_cases, None, 0, None, timestamp, test_suite_properties)
+        test_suite = TestSuite(name=test_suite_name, test_cases=test_cases, package=test_suite_name, timestamp=timestamp, properties=test_suite_properties)
 
         save_testsuite_to_file(test_suite, output_filename)
         
