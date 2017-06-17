@@ -1,11 +1,14 @@
 <?xml version="1.0" ?>
-<testsuites disabled="0" errors="1" failures="1" tests="2" time="0.0">
-        <testsuite disabled="0" errors="1" failures="1" name="MAXD1N3A00247" skipped="0" tests="2" time="0">
-                <testcase classname="RS232 UART3" name="Test  1">
-                        <error message="Test ERROR" type="error"/>
-                </testcase>
-                <testcase classname="RS232 UART4" name="Test  2">
-                        <failure message="Test FAILED" type="failure"/>
-                </testcase>
-        </testsuite>
+<testsuites disabled="0" errors="1" failures="1" tests="3" time="0.0">
+	<testsuite disabled="0" errors="1" failures="1" name="MAXD1N3A00247" skipped="1" tests="3" time="0">
+		<testcase classname="RS232 UART3" name="Test  1">
+			<error message="Test ERROR" type="error"/>
+		</testcase>
+		<testcase classname="RS232 UART4" name="Test  2">
+			<failure message="Test FAILED" type="failure"/>
+		</testcase>
+		<testcase classname="CAN" name="Test  2">
+			<skipped message="Test SKIPPED" type="skipped"/>
+		</testcase>
+	</testsuite>
 </testsuites>

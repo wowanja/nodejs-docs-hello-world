@@ -23,6 +23,7 @@ try:
             os.makedirs(os.path.dirname(filename))
             print(os.path.abspath(filename))
         except OSError as exc: # Guard against race condition
+            print(exc)
             if exc.errno != errno.EEXIST:
                 raise
     with open(filename, 'w') as f:
