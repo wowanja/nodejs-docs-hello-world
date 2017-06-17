@@ -50,14 +50,14 @@ def processTestResult(input_filename, output_filename):
                 break
             
             line_entries = line.split(':')
-            test_case_name = line_entries[0]
+            test_case_classname = line_entries[0]
             tmp_entries = line_entries[1].split('\t-')
             
-            test_case_classname = tmp_entries[0].strip(' \t\n\r')
+            test_case_name = tmp_entries[0].strip(' \t\n\r')
 
             test_case_result = tmp_entries[1].strip(' \t\n\r')
-            print(test_case_result)
-            tc = TestCase(test_case_name, test_case_classname)
+            
+            tc = TestCase(name=test_case_name, classname=test_case_classname)
             if (test_case_result.strip(' \t\n\r').lower() == 'not tested'):
                 tc.add_skipped_info('Test SKIPPED', 'skipped output')
             if (test_case_result.strip(' \t\n\r').lower() == 'failed'):
